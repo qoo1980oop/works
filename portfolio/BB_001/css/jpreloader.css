@@ -1,0 +1,7 @@
+@charset "utf-8";
+/* CSS Document */
+#jpreOverlay {background: #001500 url(../images/loadimg.gif) center 100px no-repeat;}
+#jpreSlide{font-size:50px;font-weight:bold;color:#001500;text-align:center;width:50%;height:30%;}
+#jpreLoader{width:400px;height:31px;/*border:1px solid #001500;*/}
+#jpreBar {background:#0DA1D5 url(../images/bar.jpg);}
+#jprePercentage {color:#00ff3f;font-family:"Trebuchet MS",Arial,Helvetica,sans-serif;font-weight:bold;text-align:center;/*text-shadow:1px 1px 1px #333;*/top:-1%;}

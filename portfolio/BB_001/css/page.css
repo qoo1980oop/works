@@ -1,0 +1,52 @@
+@charset "utf-8";
+/* CSS Document */
+body{ margin:0; padding:0; background: #FFFFFF; font:Arial, Helvetica, sans-serif; }
+:focus {outline: 0;}
+.fontbrown{ color:#663300}
+.fontorange{ color: #FF6600}
+img{ border:none}
+table.t1 {
+  border-collapse: collapse;
+  border: none;
+}
+
+.t1 th {
+  border-bottom:1px solid #996600;
+  color: #FFFFFF;
+  background-color: #3532cd;
+  padding: 10px 10px;
+  font-size:15px;line-height:21px
+}
+.t1 td {
+  border-top: none;
+  border-bottom: none;
+  border-left:solid 1px #666666;
+  padding: 10px 10px;
+  color: #330066;
+  font-size:12px;
+  line-height:21px
+  
+}
+.c1 {  background: #d3d6fe;}
+.c2 {  background: #9caaff;}
+
+/*  */
+.picbage{}
+
+ul, li {margin:0;padding: 0;list-style: none;}
+.abgne_tab {clear: left;width:900px;margin: 10px 0;}
+ ul.tabs {
+		width: 100%;height: 90px;
+		border-bottom: 1px solid #999; border-left: 1px solid #999; }
+ul.tabs li {float:left;
+		height:120px; width:90px;
+		margin-bottom: -1px;	/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+		border: 1px solid #999;
+		border-left: none;
+		background: #e1e1e1;}
+ul.tabs li a {display: block;color:#000;border: 1px solid #fff;text-decoration: none;}
+ul.tabs li a:hover {background: #ccc;}
+ul.tabs li.active {background: #fff;border-bottom: 1px solid # 06C;}
+div.tab_container {clear: left;width: 100%;border: 1px solid #999;border-top: none;background: #fff;}
+div.tab_container .tab_content {padding: 20px;}
+div.tab_container .tab_content h2 {margin: 0 0 20px;}

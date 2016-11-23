@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Script-Type" content="text/javascript" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+<title>《全民打棒球2 Online》</title>
+<link href="css/pic.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+
+</style>
+<script type="text/javascript">
+	$(function(){
+		// 預設顯示第一個 Tab
+		var _showTab = 0;
+		var $defaultLi = $('ul.tabs li').eq(_showTab).addClass('active');
+		$($defaultLi.find('a').attr('href')).siblings().hide();
+		
+		// 當 li 頁籤被點擊時...
+		// 若要改成滑鼠移到 li 頁籤就切換時, 把 click 改成 mouseover
+		$('ul.tabs li').click(function() {
+			// 找出 li 中的超連結 href(#id)
+			var $this = $(this),
+				_clickTab = $this.find('a').attr('href');
+			// 把目前點擊到的 li 頁籤加上 .active
+			// 並把兄弟元素中有 .active 的都移除 class
+			$this.addClass('active').siblings('.active').removeClass('active');
+			// 淡入相對應的內容並隱藏兄弟元素
+			$(_clickTab).stop(false, true).fadeIn().siblings().hide();
+
+			return false;
+		}).find('a').focus(function(){
+			this.blur();
+		});
+	});
+</script>
+</head>
+<body>
+
+<div class="picpage">
+  <a class="logo2" href="http://bb.wasabii.com.tw/index.aspx" title="前往官網" target="_blank"></a>
+  
+  <div class="abgne_tab">
+    <ul class="tabs">
+      <li><a href="#tab1"><img src="images/tab/01.jpg" /></a></li>
+      <li><a href="#tab2"><img src="images/tab/02.jpg" /></a></li>
+      <li><a href="#tab3"><img src="images/tab/03.jpg"  /></a></li>
+      <li><a href="#tab4"><img src="images/tab/04.jpg" /></a></li>
+      <li><a href="#tab5"><img src="images/tab/05.jpg"/></a></li>
+      <li><a href="#tab6"><img src="images/tab/06.jpg"  /></a></li>
+      <li><a href="#tab7"><img src="images/tab/07.jpg" /></a></li>
+      <li><a href="#tab8"><img src="images/tab/08.jpg" /></a></li>
+      <li><a href="#tab9"><img src="images/tab/09.jpg" /></a></li>
+      <li><a href="#tab10"><img src="images/tab/10.jpg" /></a></li>
+      <li><a href="#tab11"><img src="images/tab/11.jpg" /></a></li>
+      <li><a href="#tab12"><img src="images/tab/12.jpg" /></a></li>
+      <li><a href="#tab13"><img src="images/tab/13.jpg" /></a></li>
+      <li><a href="#tab14"><img src="images/tab/14.jpg" /></a></li>
+      <li><a href="#tab15"><img src="images/tab/15.jpg" /></a></li>      
+    </ul>
+    <div class="tab_container">
+      <div id="tab1" class="tab_content"><img src="images/tab/001.jpg" /></div>
+      <div id="tab2" class="tab_content"><img src="images/tab/002.jpg" /></div>
+      <div id="tab3" class="tab_content"><img src="images/tab/003.jpg"/></div>
+      <div id="tab4" class="tab_content"><img src="images/tab/004.jpg"/></div>
+      <div id="tab5" class="tab_content"><img src="images/tab/005.jpg"/></div>
+      <div id="tab6" class="tab_content"><img src="images/tab/006.jpg"/></div>
+      <div id="tab7" class="tab_content"><img src="images/tab/007.jpg"/></div>
+      <div id="tab8" class="tab_content"><img src="images/tab/008.jpg" /></div>
+      <div id="tab9" class="tab_content"><img src="images/tab/009.jpg" /></div>
+      <div id="tab10" class="tab_content"><img src="images/tab/010.jpg"/></div>
+      <div id="tab11" class="tab_content"><img src="images/tab/011.jpg"/></div>
+      <div id="tab12" class="tab_content"><img src="images/tab/012.jpg"/></div>
+      <div id="tab13" class="tab_content"><img src="images/tab/013.jpg"/></div>
+      <div id="tab14" class="tab_content"><img src="images/tab/014.jpg"/></div>
+      <div id="tab15" class="tab_content"><img src="images/tab/015.jpg"/></div>
+      
+    </div>
+  </div>
+  
+</div>
+<div id="cr"></div>
+</body>
+</html>

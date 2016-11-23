@@ -1,0 +1,116 @@
+@charset "utf-8";
+/*一般設定**************************************************************************/
+img,ol,ul,p,li,h1,h2,h3,h4,h5,h6,th,b{margin: 0px;padding: 0px;list-style-type: none;font-weight: normal;font-size: 100%;border:0px;}
+a {outline: none;behavior:expression(this.onFocus=this.blur());}
+body { margin: 0px; padding: 0px; background-color: #e1d9c5; min-width:1000px;}
+
+#wrapper {width:100%;height: 900px;background: url(images/main_visual.jpg) center top no-repeat;}
+#top_zone{
+	width:1000px;
+	height:659px;
+	margin:0 auto;
+	position:relative;
+}
+.logo {
+	display: block;
+	position: absolute;
+	height: 125px;
+	width: 247px;
+	left: 21px;
+	top: 13px;
+	z-index: 1;
+}
+.btn_gamestart {
+	display: block;
+	position: absolute;
+	left: 765px;
+	top: 615px;
+	z-index: 1;
+	background-image:url(images/btn_gamestart.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 84px;
+	width: 221px;
+}
+.btn_gamestart:hover {
+	background-image:url(images/btn_gamestart_hover.png);
+}
+
+#ct_zone{width: 1000px; position: relative; text-align:center;margin: -260px auto 0px auto;}
+.img01, .img02, .img03 {
+	display:block;
+	position: relative;
+}
+.link_1 a ,.link_2 a {
+	font-size: 13px;
+	text-decoration: underline;
+	color: #0000ee;}
+.link_1{
+	position:absolute;
+	display: inline;
+	left: 175px;
+	top: 410px;
+
+}
+.link_2{
+	position:absolute;
+	display: inline;
+	left: 175px;
+	top: 431px;
+}
+
+#btn_forum { position: absolute; width: 370px; height: 28px; background: url(images/btn_nav_n.png) no-repeat; left: 580px; top: 660px; z-index: 1; }
+#btn_forum li{float:left;height:28px;}
+#Fo1{width:71px;}#Fo2{width:61px;}#Fo3{width:66px;}#Fo4{width:64px;}#Fo5{width:55px;}#Fo6{width:53px;}
+#btn_forum a {width:100%;height:28px;display:block; cursor:pointer;}
+#btn_forum a:hover{background:url(images/btn_nav_o.png) no-repeat;}
+#Fo2 a,#Fo2 a:hover{background-position:-71px 0;}
+#Fo3 a,#Fo3 a:hover{background-position:-132px 0;}
+#Fo4 a,#Fo4 a:hover{background-position:-198px 0;}
+#Fo5 a,#Fo5 a:hover{background-position:-262px 0;}
+#Fo6 a,#Fo6 a:hover{background-position:-317px 0;}
+
+.btn_start{ position: absolute; width:215px; height:186px; left: 390px; top: 415px; background:url(images/btn_start.png) 0px 0px; z-index: 1; }
+.btn_start:hover{background-position:0px -186px;}
+
+#toTop {
+	display:none;
+	text-decoration:none;
+	position:fixed;
+	bottom:20px;
+	right:20px;
+	overflow:hidden;
+	width:60px;
+	height:64px;
+	border:none;
+	text-indent:100%;
+	background:url(images/btn_top.png) no-repeat left top;
+}
+
+#toTopHover {
+	background:url(images/btn_top.png) no-repeat left -64px;
+	width:60px;
+	height:64px;
+	display:block;
+	overflow:hidden;
+	float:left;
+	opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+}
+
+#toTop:active, #toTop:focus {
+	outline:none;
+}
+
+.cr{ width:100%; height:116px; clear:both;}
+.cr .cr_content{width: 1000px; margin: 0 auto;}
+.cr p{ float:left; width:300px; line-height:15px; text-align:left; margin: 30px 0px 0px 20px; font-family:Arial, Helvetica, sans-serif; font-size:10px; -webkit-transform:scale(0.75); display:inline-block; color:#000;}
+@media screen and (-webkit-min-device-pixel-ratio:0){ .cr p {margin: 24px -75px 0px -30px; width:430px;line-height:20px;letter-spacing:1px; } } 
+:root .cr p{letter-spacing: 0.02em\9;}
+.cr h2{float:left;margin:30px 0 0 100px;}
+.cr h3{float:left;margin:30px 0 0 20px;}
+.cr h4{float:left;margin:20px 0 0 0px;}
+.cr h5{float:left; width:290px; line-height:14px; text-align:left; margin: 15px 0px 0px 10px; font-family:Arial,"微軟正黑體"; font-size:11px; -webkit-transform:scale(0.91); display:inline-block; color:#000; }
+@media screen and (-webkit-min-device-pixel-ratio:0){ .cr h5 {margin: 15px -80px 0px 0px; width:300px;} } 
+@media \0screen { .cr h5 {font-size: 10px;} }

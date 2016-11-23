@@ -1,0 +1,104 @@
+@charset 'utf-8';
+
+/*選單*/
+.menu_icon { display: none; /* hide menu icon initially */}
+.menu_logo{ width:10%; display:inline-block; }
+.menu_logo img{ max-width:100%; vertical-align:middle; margin-top:-5%;}
+.menu_logo_in{	display: none; }
+
+.nav_wrap_w{	position:fixed; max-width:1764px; background-color:#460391; z-index:9999; text-align:center; min-height:8%; left:0; right:0; margin:0 auto; width:100%; padding-bottom:0.5%; }
+.nav_wrap {	padding:0;	z-index:999;	display:inline-block;	padding-top:0%; min-width:100%;}
+.nav_wrap > ul { }
+
+#nav, #nav li {	margin: 0;	padding: 0;	text-align:center;}
+#nav li {	list-style: none;	margin-right: 2%;	display:inline-block;}
+
+/* nav link */
+#nav a {	padding: 16% 0% 0 0%;	display: block;	color: #FFF;	font-size: 120%;	text-decoration: none;}
+#nav a:active {	color: #FFF;}
+
+/* nav dropdown */
+#nav ul {	background: #fff;	padding: 2px;	position: absolute;	border: solid 1px #ccc;	display: none; /* hide dropdown */	width: 200px;	cursor: pointer;}
+#nav ul li {	float: none;	margin: 0;	padding: 0;}
+#nav li:hover > ul {	display: block; /* show dropdown on hover */}
+
+/*MOBILE*/
+@media screen and (max-width: 919px) {
+.menu_logo { display: none!important; }
+
+.menu_logo_in {
+	display:block;
+	width:50px;
+	height: 50px;
+}
+.menu_logo_in img{ min-width:100px; padding:12px 0 0 6px;}
+
+.nav_wrap_w{	position:fixed; width:100%; height:56px; background-color:#460391; z-index:9999; padding:0;}
+.nav_wrap { width:100%;}
+.menu_icon {
+	color: #000;
+	width: 50px;
+	height: 50px;
+	background: url(../images/menu_icon.png) no-repeat center;
+	padding: 8px 10px 0 42px;
+	cursor: pointer;
+	display: block; /* show menu icon */
+	position:absolute;
+	z-index:99999;
+	right:1%;
+	top:8%;
+}
+#nav {
+	clear: both;
+	position: absolute;
+	width: 100%;
+	z-index: 10000;
+	padding: 5px;
+	background: #1e1e1e;
+	display: none; /* visibility will be toggled with jquery */
+	top:56px;
+	filter:alpha(opacity=92);
+	opacity: 0.92;
+}
+#nav li { display:inline-block;	padding:2% 1% 2% 1%;}
+#nav a, 
+#nav ul a {
+	font: inherit;
+	background: none;
+	display: inline;
+	padding: 0;
+	color: #fff;
+	border: none;
+	font-size:120%;
+}
+#nav a:hover, 
+#nav ul a:hover {
+	background: none;
+	color: #fff;
+}
+
+/* dropdown */
+#nav ul {
+	width: auto;
+	position: static;
+	display: block;
+	border: none;
+	background: inherit;
+}
+#nav ul li {
+	margin: 3px 0 3px 15px;
+}
+
+}
+
+
+@media screen and (min-width: 919px) {
+	/* ensure #nav is visible on desktop version */
+	#nav {
+		display: table !important;
+		width:100%;
+		text-align:center;
+		vertical-align:middle;
+	}
+
+}

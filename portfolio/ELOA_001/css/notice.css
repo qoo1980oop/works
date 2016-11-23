@@ -1,0 +1,138 @@
+/*公告*/
+.notice_wap{ position: absolute; margin:0%; z-index:3; 	width:100%; padding:6% 0 6% 0; height:98%; bottom:1%;}
+.tt_notice{
+	width:100%;
+	clear:both;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #4d2f80;
+	display: table;
+}
+.tt_notice img{ max-width:20%!important;}
+
+.notice_back { display:table; width:100%; text-align:right; margin:0 0 1% 0;}
+.notice_back a {
+	text-align:center;
+	color: #FFF;
+	font-size:120%;
+	background-color: #460391;
+	color: #FFF;
+	padding: 1% 4% 1% 4%;;
+	margin: 0 2% 1% auto;
+	text-decoration: none;
+	width:50%;
+
+}
+
+.notice{
+	width:50%;
+	position: relative;
+	padding:2% 1% 0% 1%;
+	background-color: #FFF;
+	text-align: left;
+	font-size:100%;
+	overflow:hidden;
+	display: inline-block;
+	min-height:100%;
+}
+.notice_tp{
+	width:65%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	float:left;
+	padding:1%;
+}
+.notice_tp a{
+	color: #666;
+	padding:2% 1% 0% 1%;
+	text-decoration: none;
+}
+
+/*.notice_tp::after {content:" ...";}*/
+.notice_date{ 
+	float:left;
+	width:30%;
+	text-align:right;
+	font-size:80%;
+	color: #666;
+	padding:1%;
+}
+
+/*公告內頁*/
+.notice_in{
+	width:50%;
+	height:100%;
+	position: relative;
+	padding:2% 1% 0% 1%;
+	background-color: #FFF;
+	text-align: left;
+	font-size:100%;
+	overflow:hidden;
+	display: inline-block;
+	min-height:100%;
+	overflow-x:hidden;
+	overflow-y:auto;
+}
+.notice_tp_in{
+	width:84%;
+	float:left;
+	padding:1% 0 1% 0;
+	color:#666;
+	font-size:120%;
+}
+.notice_date_in{ 
+	float:left;
+	text-align:right;
+	font-size:120%;
+	color: #666;
+	padding:1% 2% 0% 1%;
+}
+.notice_text{
+	width:98%;
+	clear:both;
+	margin:0 auto;
+	border-top-width: 1px;
+	border-top-style: dashed;
+	border-top-color: #CCC;
+	padding:1% 0 2% 0;
+}
+
+@media screen and (max-width: 919px) {
+.notice_wap{ position: absolute; margin:0%; z-index:3; 	width:100%; padding:25% 0 0 0; height:86%;}
+.notice{ width:95%;}
+.notice_in{ width:95%;}
+
+}
+
+@media screen and (max-width: 640px) {
+.notice_tp_in{
+	width:100%;
+	float:left;
+	padding:1% 0 1% 0;
+}
+}
+@media screen and (max-width: 320px) {
+.notice{
+	width:98%;
+	position: relative;
+	padding:2% 1% 1% 1%;
+	background-color: #FFF;
+	text-align: left;
+	font-size:80%;
+	overflow:hidden;
+	display: inline-block;
+}
+.notice_tp{
+	width:65%;
+	overflow:hidden;
+	white-space:nowrap;
+	text-overflow:ellipsis;
+	float:left;
+	padding:0% 0 0% 0;
+}
+
+.notice_in{
+	width:98%;
+}
+}

@@ -1,0 +1,70 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**/
+
+a { cursor: pointer; outline: none; behavior:expression(this.onFocus=this.blur());-webkit-transition: background-position 0.2s;	/* Safari & Chrome */
+		-moz-transition: background-position 0.2s;		/* Firefox */
+		-ms-transition: background-position 0.2s;		/* IE */
+		-o-transition: background-position 0.2s;		/* Opera */
+		transition: background-position 0.2s;
+}
+
+body{
+	background: url(../images/tab/card_bg.jpg) top center no-repeat #000;
+	margin: 0px;
+}
+ul,li {padding:0;list-style: none;}
+
+#cr {
+	height: 100px;
+	width: 100%;
+	position: relative;
+	text-align: center;
+	clear: both;
+	margin-top: 0;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	background-color: #F2F2F2;
+	background-image: url(../images/cr.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.picpage{ width:880px; height:auto; margin:0px auto 10px auto; position:relative;}
+
+.bn1{position: absolute;
+	left:300px; top:-40px;
+	width:119px;
+	height:34px;
+	z-index: 2;}
+.bn2{position: absolute;
+	left:430px; top:-40px;
+	width:119px;
+	height:34px;
+	z-index: 2;}	
+
+.abgne_tab{width:860px;
+     margin:490px auto 20px auto; 
+	 padding:5px auto 15px auto ;
+    -webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
+	border-radius:5px;
+	background: rgba(255, 255, 255, 0.15);}
+
+.logo2 { position: absolute; left:400px; top:-390px; width: 176px; height: 80px; z-index: 50; 
+}
+
+.back{ position: absolute; width: 369px; height:291px; z-index: 1; left: 62px; top: -224px; }
+
+ul.tabs ul{ width:100%; height:100px;display:block;overflow:hidden;}		
+ul.tabs li{float:left;display: block; margin-top:10px; 
+		height:125px; width:95px; margin-left:8px; padding:2px;/* 讓 li 往下移來遮住 ul 的部份 border-bottom */
+		}
+ul.tabs li a {display: block;color:#000;}
+ul.tabs li a:hover { transform:scale(0.95);}
+
+.tab_container{width:100%;margin-top:20px; display:block; overflow:hidden; clear:both; text-align:center;}
+.tab_container .tab_content { display:block; margin:20px 0 20px 0; width:100%; }

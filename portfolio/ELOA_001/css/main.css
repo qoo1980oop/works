@@ -1,0 +1,283 @@
+body {
+    overflow-x: hidden; 
+}
+/*IE除蟲*/
+img {  width: 100%;  max-width: 100%;  height: auto;}
+img { -ms-interpolation-mode: bicubic; }
+
+.wap { width:100%; text-align:center;}
+.index_01 img, .index_02 img, .index_03 img, .index_04 img, .index_05 img, .index_06 img, .index_07 img {
+    max-width: 100%;
+    height: auto;
+	margin:0;
+	float:left;
+}
+.index_01{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0; padding-top:54px;}
+.index_02{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0;}
+.index_03{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0;}
+.index_04{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0;}
+.index_05{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0;}
+.index_06{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0;}
+.index_07{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; line-height:0;}
+
+/*首頁*/
+.index_01{ position: relative; display:inline-block; vertical-align: top; overflow: hidden;  min-height: 100%;}
+.logo {
+	position: absolute;
+	left: 50%;
+	-webkit-transform: translateX(-50%);
+	transform: translateX(-50%);
+	max-width:100%;
+	bottom:20%;
+}
+
+.logo img{  max-width:100%; }
+
+/*影片*/
+.ytplayer {pointer-events: none;position: absolute;}
+.vod_area{ position: absolute; padding-bottom: 56.25%; width:100%; /* padding-bottom: 43.9%;*/ padding-top: 0px; height: 0; overflow: hidden;}
+.vod_area .mask{z-index:9;position:relative;top:0;left:0;width:100%;min-height:100%;background:url(../images/bg_vodArea.png) repeat 0 0; display:none; height: 0;}
+.vod_area iframe{ position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+
+/*-- VIDEO PLAY BUTTON --*/
+a.video_pop_up { position:relative;	display:table; margin:0 auto; padding-top:0%!important;}
+a.video_pop_up img { position: relative; z-index: 5; max-width:100%; }	
+.play {	width: 15%;	height: 15%; position:absolute;	z-index:500; opacity: 0.8; left:50%; top:50%;	margin-left:-8%; margin-top:-8%;}
+/*.play:hover {	opacity: 1;}*/
+
+.videoWrapper {
+  height:600px;
+  width:600px;
+  position:relative;
+  overflow:hidden;
+}
+
+.videoWrapper iframe {
+    height:100%;
+    width:100%;
+    position:absolute;
+    top:0;
+    bottom:0;
+}
+
+
+
+/*故事起源*/
+.index_02{ position: relative; display:inline-block; vertical-align: top; overflow: hidden; margin-top:-0.5%;}
+.index_02_wap{ position: relative;}
+.index_02_bg1{ position:absolute; width:100%;  margin:16% auto 0 -15%; z-index:99;}
+.index_02_bg2{ position:absolute; width:100%; margin:11% auto 0 13%; z-index:99;}
+.movie{ background-color:#000; position:absolute; width:56%; margin:0% auto 0 auto;z-index:100; left:22%; top:22%; padding:2px;}
+
+    .video-container {
+    position: relative;
+/* 	padding-bottom:66.66%; /*3:2*/
+   padding-bottom: 56.25%; /*16:9*/
+/*    padding-bottom: 75%; 4:3*/
+
+    height: 0;
+    overflow: hidden;
+    }
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/*三大特色*/
+.index_03_wap {
+    position: absolute;
+    width: 100%;
+}
+.index_03_wap_w {
+    position: relative;
+	margin:0% 0 0 13%;
+    max-width: 70%;
+}
+.index_03_wap_w img {
+    max-width: 28%;
+}
+.index_03_peo{  position: absolute; z-index:99;}
+.feature_01 img{ margin:25% auto 0 auto;}
+.feature_02 img{ margin:15% auto 0 auto;}
+.feature_03 img{ margin:5% auto 0 auto;}
+
+/*種族*/
+.index_04_wap {
+	position: absolute;
+    width: 100%;
+}
+.race_wap div{
+    width: 38%;
+    display: inline-block;
+	vertical-align: top;
+    *display: inline;
+    *zoom: 1;
+	margin-left:-4%;
+	margin-right:-4%;
+}
+.race_01{ margin-top:6%;}
+.race_02{ margin-top:4%; z-index:999;}
+.race_03{ margin-top:6%;}
+
+
+/*三段戰鬥姿態*/
+.index_05_wap {
+	position: absolute;
+    width: 100%;
+	padding-top:6%;
+}
+.occupation_wap{
+	display:table;
+	text-align:center;
+	margin:0 auto;
+	max-width: 64%;
+}
+.occupation_tt{	
+	display:table;
+	text-align:center;
+	margin:0 auto;
+	max-width: 100%;
+}
+.occupation_tt img{	
+	max-width: 100%;
+}
+.occupation_01{}
+.occupation_02{}
+.occupation_03{}
+.occupation_04{}
+
+
+/*聖光貴族*/
+.index_06_wap{ position: absolute; margin:0%; z-index:3; 	width:100%; padding:6% 0 6% 0; height:98%; bottom:1%;}
+.movie_06_tt{
+	width:100%;
+	clear:both;
+	display: table;
+}
+.movie_06_tt img{ max-width:40%!important; float:none;}
+
+.movie2{ background-color:#000; position:absolute; width:40%; margin:0% auto 0 auto;z-index:100; left:30%; top:35%; padding:2px;}
+
+    .video-container2 {
+    position: relative;
+/* 	padding-bottom:66.66%; /*3:2*/
+   padding-bottom: 56.25%; /*16:9*/
+/*    padding-bottom: 75%; 4:3*/
+    height: 0;
+    overflow: hidden;
+    }
+    .video-container2 iframe,
+    .video-container2 object,
+    .video-container2 embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    }
+	
+/*最新消息*/
+.index_07_peo  {   z-index:1; display:none; }
+.index_07_peo img  { position: absolute; margin:0 auto 0 auto; left: 0; right: 0; text-align:center;  }
+.index_07_bg2{ display:none;}
+
+/*Banner*/
+.banner {
+	display: inline-block;
+	position: relative;
+	width:100%;
+	text-align: center;
+	margin:0 auto;
+	z-index:999;
+	background-color: #111;
+}
+.banner ul {
+	margin:1%;
+}
+.banner li {
+	text-align: center;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffef99+0,845a39+50,c3a66f+100 */
+	background: #ffef99; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ffef99 0%, #845a39 50%, #c3a66f 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #ffef99 0%,#845a39 50%,#c3a66f 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #ffef99 0%,#845a39 50%,#c3a66f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffef99', endColorstr='#c3a66f',GradientType=0 ); /* IE6-9 */
+	-moz-box-shadow: 2px 2px 2px #888888; /* 老的 Firefox */
+	box-shadow: 2px 2px 2px #000;
+	padding:2px;
+	display:inline-block;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin:0.5%;
+	max-width:20%;
+}
+.banner img {
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	float:none!important;
+	width:100%;
+} 
+
+
+@media screen and (max-width: 919px) {
+
+
+.index_01_bg  {   min-width: 100%;  margin-left: 0%;}
+.index_02_bg  {   min-width: 140%;  margin-left: -20%;}
+.index_03_bg  {   min-width: 160%;  margin-left:-10%;}
+.index_04_bg  {   min-width: 160%;  margin-left:-10%;}
+.index_05_bg  {   min-width: 150%;  margin-left:-30%;}
+.index_06_bg  {   min-width: 160%;  margin-left:-10%;}
+
+
+.index_02_bg1{ position:absolute; width:100%;  margin:26% auto 0 -15%; z-index:99;}
+.index_02_bg2{ position:absolute; width:100%; margin:24% auto 0 13%; z-index:99;}
+
+
+.index_03_wap { width: 168%; left:-21%;}
+.index_03_peo{  position: absolute; z-index:99; width:150%; top:42%; left:-40%;}
+.index_04_wap { width:150%; left:-27%;}
+.race_wap div{	margin-left:-4%;	margin-right:-4%;}
+
+
+.index_05_wap { padding-top:8%;}
+.occupation_wap {max-width: 95%;}
+.occupation_tt { padding-left:3%;}
+.occupation_tt img{	max-width: 95%;}
+.movie_06_tt img{ max-width:85%!important; float:none;}
+
+.index_07_peo { display:block; }
+.index_07_peo img  { min-width:150%; left:-25%;}
+.index_07_bg{  display:none;}
+.index_07_bg2{ display:block;}
+.index_07_bg2 img {   min-width: 160%; margin-left:-30%;}
+
+
+
+
+.movie{ position:absolute; width:80%;left:10%; top:20%;}
+.movie2{ position:absolute; width:80%; left:10%; top:38%;}
+
+.banner li {	max-width:48%;}
+
+}
+
+@media screen and (max-width: 800px) {
+.ytplayer { display:none;}
+.vod_area{ display:none;}
+}
+
+@media screen and (max-width: 640px) {
+
+}
+@media screen and (max-width: 320px) {
+
+
+}
