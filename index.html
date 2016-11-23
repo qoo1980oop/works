@@ -1,22 +1,279 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>GG</title>
-<style type="text/css">
-<!--
-body {
-	background-color: #000;
-}
-.css {
-	font-size: 30px;
-	color: #FFF;
-	font-family: "微軟正黑體", Arial;
-}
--->
-</style></head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
+<title>Felix's Portfolio</title>
 
-<body class="css">
-鍋巴：沒六萬八我不轉職
+<link href="css/main.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+<link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+<link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
+<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script><!-- JS主程式 -->
+
+
+<!-- 加入主畫面 -->
+<!--<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">-->
+<link rel="apple-touch-icon" sizes="57x57" href="icon/57x57.png" />  
+<link rel="apple-touch-icon" sizes="72x72" href="icon/72x72.png" />  
+<link rel="apple-touch-icon" sizes="114x114" href="icon/114x114.png" />    
+<link rel="apple-touch-icon" sizes="144x144" href="icon/144x144.png" /> 
+
+<!--瀑布流-->
+<script src="js/jquery.masonry.js"></script>
+<link rel="stylesheet" href="css/masonry.css" />
+
+<!--fancyBox -->
+<script type="text/javascript" src="js/jquery.mousewheel-3.0.6.pack.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<link rel="stylesheet" type="text/css" href="js/jquery.fancybox.css" media="screen" />
+
+<!-- Optionally add helpers - button, thumbnail and/or media -->
+<link rel="stylesheet" href="js/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
+<script type="text/javascript" src="js/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+<!--類似sidr-->
+<link rel="stylesheet" href="css/navigation.css">
+<script type="text/javascript">
+jQuery(document).ready(function($){
+	/* toggle nav */
+	$(".menu_icon").on("click", function(){
+		$("#nav").slideToggle();
+		$(this).toggleClass("active");
+	});
+
+	$("#top,#portfolio,#contact").click(function(){
+	$("#nav").fadeToggle();	});
+
+});
+</script>
+
+<style type="text/css">
+#simple_menu{
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 0px;
+	padding: 10px;
+	border: 1px solid #999;
+	position:fixed;
+	background-image: url(img/btn_menu.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	height: 50px;
+	width: 50px;
+	margin:4% auto 0 4%;
+	z-index:99999;
+}
+
+</style>
+
+<!-- Fancybox Javascript -->
+<script type="text/javascript">
+  $(document).ready(function() {
+    $(".fancybox-thumb").fancybox({
+        prevEffect  : 'none',
+        nextEffect  : 'none',
+        openEffect  : 'elastic',
+        closeEffect : 'elastic',
+		mouseWheel : false,
+		padding : 6,
+
+
+/*        helpers : {
+            thumbs  : {
+                width   : 100,
+                height  : 100
+            }
+        }*/
+    });
+});
+</script>
+
+
+
+
+</head>
+
+<body>
+
+<div class="nav_wrap_w">
+<div class="logo"></div><div class="arrow_box">Felix's Portfolio</div>
+<div class="menu_icon"></div>
+<!--類似sidr-->
+<div class="nav_wrap">
+    <ul id="nav">
+        <li id="top"><a href="#">Home</a></li>
+        <li id="top"><a href="#">關於我</a></li>
+        <li id="portfolio"><a href="#">作品集</a>
+        <!--					<ul>
+                <li><a href="#">第二層</a></li>
+                <li><a href="#">第二層</a></li>
+                <li><a href="#">第二層</a></li>
+            </ul>-->
+        </li>
+        <li id="contact"><a href="#">聯絡方式</a></li>
+    </ul>
+</div>
+</div>
+
+
+<!--滑動選單-->
+<script language="javascript">
+$(function(){
+	$('#top').click(function(){
+		$('html,body').animate({scrollTop:$('.wap').offset().top}, 800);
+	}); 
+	
+	$('#portfolio').click(function(){
+		$('html,body').animate({scrollTop:$('.portfolio_wap').offset().top}, 800);
+	});
+	
+	$('#contact').click(function(){
+		$('html,body').animate({scrollTop:$('.contact_wap').offset().top}, 800);
+	});
+});
+</script>
+
+
+
+<div class="wap"><!--wap開始-->
+<div class="top_wap">
+
+<div class="skill">
+<ul>
+<li>專長</li>
+<li>Photoshop</li>
+<li>Dreamwaver</li>
+<li>Illustrator</li>
+<li>IIS</li>
+<li>jquery</li>
+<li>javascript</li>
+<li>RWD響應式</li>
+</ul>
+</div>
+
+<div class="photo"></div>
+
+</div>
+
+<div class="about_wap">
+<div class="main_title">關於我<span>/ About Me</span></div>
+<div class="about_content">
+<p>
+您好，感謝您花幾分鐘的時間觀看本人的履歷。從剛出社會的小夥子到現在可以獨當一面的設計者。最近看完了電影大賣空，才發現2008年金融海嘯原來曾經有那麼過，當時因為年紀輕，相對是無感的，唯一可以確定的是自己追求的還是設計，始終如一。
+</p>
+<p>
+然而2008之後一個循環，目前景氣又回到不算好面向，或許認真付出已經不是可以得到回報等值或超值。台灣是否還有可以跟現狀接軌與突破的公司或是中小型企業的存在？還是有的。因此有了想轉換跑道的信念，安逸久了也想出去外面闖一闖了。希望我的加入可以讓貴公司新增再一名強而有力的生力軍。
+</p>
+</div>
+</div>
+
+
+
+<div class="portfolio_wap">
+<div class="main_title">作品集<span>/ Portfolio</span></div>
+
+<!--瀑布流-->
+<div class="row">
+<div id="container" class="large-12 columns transitions-enabled large-centered clearfix">
+<!--<img src="images/untitled.jpg" >-->
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/wa_001.jpg">
+<span class="roll"></span>
+<img src="portfolio/wa_001s.png" alt=""><br>
+<div class="portfolio_tt">Wasabii手機平台(RWD)</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/GCJP_001/index.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/GCJP_001s.jpg" alt=""><br>
+<div class="portfolio_tt">攻城掠地事前登入evevt</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/OC_001/join_job_1.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/OC_001s.jpg" alt=""><br>
+<div class="portfolio_tt">《傲世辣椒》公司網站增加徵才頁</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/BB_001/index.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/BB_001s.jpg" alt=""><br>
+<div class="portfolio_tt">全民打棒球改版</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/COG_001/index.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/COG_001s.png" alt=""><br>
+<div class="portfolio_tt">神之子事前登入(RWD)</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/COG_002.jpg">
+<span class="roll"></span>
+<img src="portfolio/COG_002s.jpg" alt=""><br>
+<div class="portfolio_tt">神之子外部BN</div>
+</a>
+
+
+
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/ELOA_001/index.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/ELOA_001s.jpg" alt=""><br>
+<div class="portfolio_tt">ELOA 艾洛亞形象官網</div>
+</a>
+
+
+</div><!--/container -->
+</div><!--/row -->	
+
+
+
+<script>
+var $containter = $('#container');
+$containter.imagesLoaded( function(){
+	$containter.masonry({
+	  itemSelector: '.box',
+	  isAnimated: !Modernizr.csstransitions,
+	  isFitWidth: true,fitWidth: true
+ });
+});
+
+</script>
+
+
+<!--<div class="portfolio_content">
+<ul class="portfolio_btn">
+<li><a class="fancybox fancybox.iframe" href="01yokai_info01.html"><img src="img/Portfolio_1.jpg">活動頁</a></li>
+<li><a class="fancybox2" href="portfolio/sds_01.jpg"><img src="portfolio/sds_01.jpg">活動頁</a></li>
+<li><a class="fancybox fancybox.iframe" href="#"><img src="img/Portfolio_1.jpg">官網</a></li>
+<li><a class="fancybox fancybox.iframe" href="#"><img src="img/Portfolio_1.jpg">logo</a></li>
+<li><a class="fancybox fancybox.iframe" href="#"><img src="img/Portfolio_1.jpg">平面物</a></li>
+<li><a class="fancybox fancybox.iframe" href="#"><img src="img/Portfolio_1.jpg">Banner</a></li>
+<li><a class="fancybox fancybox.iframe" href="#"><img src="img/Portfolio_1.jpg">Banner</a></li>
+</ul>
+</div>-->
+</div>
+
+
+
+<div class="contact_wap">
+<div class="main_title">聯絡方式<span>/ Contact</span></div>
+<div class="contact_content">
+<ul>
+<li><a href="mailto:qoo1980oop@gmail.com?subject=Felix's&body=您好">Email：qoo1980oop@gmail.com</a></li>
+<li>Skype：loveanwar@hotmail.com</li>
+<li><a href="tel:0975968608">Mobile (iPhone)：0975968608</a></li>
+</ul>
+<div class="lineqr"><img src="img/line.PNG" ></div>
+</div>
+</div>
+
+</div><!--wap結束-->
+	
+<!--<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mobile.min.js"></script>-->
+<!--<script src="js/main.js"></script>--> <!-- Resource jQuery -->
 </body>
 </html>
