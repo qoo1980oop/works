@@ -1,0 +1,203 @@
+@charset 'utf-8';
+#pagewrap {
+	width: 960px;
+	max-width: 94%;
+	margin: 30px auto 0;
+}
+#content {
+	clear: both;
+	border-top: solid 1px #ccc;
+	padding-top: 20px;
+	margin: 20px 0;
+}
+
+
+.arrow_box {
+	position: absolute;
+	color:#617485;
+	background: #cce1f2;
+	border: 1px solid #d1dbe8;
+	left:56px;
+	text-align:center;
+	margin-top:0px;
+	padding:4px;
+}
+.arrow_box:after, .arrow_box:before {
+	right: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(204, 225, 242, 0);
+	border-right-color: #cce1f2;
+	border-width: 4px;
+	margin-top: -4px;
+}
+.arrow_box:before {
+	border-color: rgba(209, 219, 232, 0);
+	border-right-color: #d1dbe8;
+	border-width: 5px;
+	margin-top: -5px;
+}
+
+
+/************************************************************************************
+NAV
+*************************************************************************************/
+
+
+.nav_wrap_w{	position:fixed; width:100%; background-color:#FFF; z-index:9999; padding:18px;}
+.nav_wrap {
+	padding:0;
+	z-index:999;
+	width:100%;
+}
+.nav_wrap > ul { }
+/* menu icon */
+.menu_icon {
+	display: none; /* hide menu icon initially */
+}
+
+#nav, 
+#nav li {
+	margin: 0;
+	padding: 0;
+	text-align:center;
+}
+#nav li {
+	list-style: none;
+	margin-right: 5px;
+	display:inline-block;
+}
+
+/* nav link */
+#nav a {
+	padding: 4px 15px;
+	display: block;
+	color: #000;
+}
+#nav a:hover {
+/*	background: #f8f8f8;*/
+}
+
+/* nav dropdown */
+#nav ul {
+	background: #fff;
+	padding: 2px;
+	position: absolute;
+	border: solid 1px #ccc;
+	display: none; /* hide dropdown */
+	width: 200px;
+	cursor: pointer;
+}
+#nav ul li {
+	float: none;
+	margin: 0;
+	padding: 0;
+}
+#nav li:hover > ul {
+	display: block; /* show dropdown on hover */
+}
+
+.logo {
+	width:50px;
+	height: 50px;
+	z-index:999;
+	background-image: url(../img/fb_chat.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size:50px;
+	position:absolute;
+	z-index:99999;
+	left:0%;
+	top:8%;
+}
+
+
+/************************************************************************************
+MOBILE
+*************************************************************************************/
+@media screen and (max-width: 768px) {
+	.arrow_box {
+	margin-top:18px;
+}
+	.nav_wrap_w{	position:fixed; width:100%; height:56px; background-color:#FFF; z-index:9999; padding:0;}
+	.nav_wrap { width:100%;}
+	.menu_icon {
+		color: #000;
+		width: 50px;
+		height: 50px;
+		background: url(../img/btn_menu_2.png) no-repeat center;
+		padding: 8px 10px 0 42px;
+		cursor: pointer;
+		display: block; /* show menu icon */
+		position:absolute;
+		z-index:99999;
+		right:1%;
+		top:8%;
+	}
+	#nav {
+		clear: both;
+		position: absolute;
+		width: 100%;
+		z-index: 10000;
+		padding: 5px;
+		background: #1e1e1e;
+		display: none; /* visibility will be toggled with jquery */
+		top:56px;
+		filter:alpha(opacity=92);
+		opacity: 0.92;
+	}
+	#nav li {
+		clear: both;
+		float: none;
+		margin: 10px 0 0 0px;
+		display:block;
+		padding:0 0 0.8em 0;
+	}
+	#nav a, 
+	#nav ul a {
+		font: inherit;
+		background: none;
+		display: inline;
+		padding: 0;
+		color: #fff;
+		border: none;
+	}
+	#nav a:hover, 
+	#nav ul a:hover {
+		background: none;
+		color: #fff;
+	}
+	
+	/* dropdown */
+	#nav ul {
+		width: auto;
+		position: static;
+		display: block;
+		border: none;
+		background: inherit;
+	}
+	#nav ul li {
+		margin: 3px 0 3px 15px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	/* ensure #nav is visible on desktop version */
+	#nav {
+		display: table !important;
+		width:100%;
+		text-align:right;
+		vertical-align:middle;
+	}
+
+}
