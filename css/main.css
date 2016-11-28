@@ -43,6 +43,7 @@ body {
 }
 
 
+
 .top_wap, .about_wap, .portfolio_wap, .contact_wap { max-width:100%;}
 .about_wap , .portfolio_wap { padding-top:58px;}
 .contact_wap { padding-top:10px;}
