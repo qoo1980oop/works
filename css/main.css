@@ -12,37 +12,46 @@
 }
 body {
 	font-size:1em;
-	background-color:#161616;
+	background-color:#0d0d0d;
 	font-family: "微軟正黑體", Arial;
-	color:#FFF;
+	color:#e5e5e5;
 
 }
 .wap{
 	display: block;
 	padding:56px 0% 0 0%;
 }
-.top_wap{ clear:both;  width:100%; height:100%; background: url(../img/top.jpg) no-repeat top center; background-size:120%; padding:30% 0 20% 0;}
+.top_wap{ clear:both;  width:100%; height:100%; background: url(../img/top.jpg) no-repeat top center; }
 .top_wap img{}
-.skill{
-	font-size:120%;
-	position:absolute;
-	top:60px;
-	left:1%;
-	background:rgba(0%,0%,0%,0.7);
+.skill_wap{ width:100%;}
+.skill_1, .skill_2, .skill_3, .skill_4{
+	width:24%;
+	font-size:100%;
 	line-height: 110%;
+	text-align:center;
+	position: relative;
+	min-height:200px;
+	float:left;
+	left:1%;
+	display:table;
+	margin:10% 0 10% 0;
 }
-.skill ul{padding:10%;}
-.skill li{ display:block;}
+.skill_1 ul, .skill_2 ul, .skill_3 ul, .skill_4 ul{
+	vertical-align:middle;
+	display:table-cell;
+
+}
+
 
 .top_wap, .about_wap, .portfolio_wap, .contact_wap { max-width:100%;}
-.portfolio_wap { padding-top:58px;}
+.about_wap , .portfolio_wap { padding-top:58px;}
 .contact_wap { padding-top:10px;}
 
 .main_title:first-child{  margin-top: 0%;}
 .main_title {
 	width: 100%;
-	font-size:160%;
-	text-align:left;
+	font-size:120%;
+	text-align:center;
 	display: inline-block;
 	font-family: 'cwTeXHei', sans-serif;
 	border-bottom-width: 1px;
@@ -51,15 +60,12 @@ body {
 	border-top-width: 1px;
 	border-top-style: solid;
 	border-top-color: #333;
-	margin-top: 2%;
-	margin-bottom: 2%;
-	padding-top: 10px;
-	padding-bottom: 2%;
-	padding-left: 10px;
+	line-height: 300%;
+	margin-bottom: 1%;
 }
 .main_title span {
 	font-family: "微軟正黑體", Arial;
-	color: #F09624;
+	color: #e5e5e5;
 	padding-left: 1%;
 }
 
@@ -133,7 +139,7 @@ body {
 
 @media screen and (max-width: 520px) {
 	.col2 { max-width: 240px; }
-    .skill, .about_content { font-size:90%; }
+    .skill_wap, .about_content { font-size:90%; }
 }
 
 
