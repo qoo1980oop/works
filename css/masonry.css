@@ -19,6 +19,25 @@
 	  -moz-box-sizing:content-box;
 	  box-sizing:content-box;
 	}
+	
+	#container2 {
+	  float:none;
+	  padding: 0;
+	  margin:0 auto;
+	  margin-bottom:30px;
+	  /* optional */
+/*	  -webkit-border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  border-radius: 5px;*/
+	  /* content-box is NEEDED. if border-box is enabled
+	     then it when Masonry calculates the height and width
+		 of the container it counts incorrectly and the result
+		 images running to the edge of the container on the right
+		 and bottom sides. Only apply content-box to the container. */
+	  -webkit-box-sizing:content-box;
+	  -moz-box-sizing:content-box;
+	  box-sizing:content-box;
+	}
 
 /*	spacing between the images*/
 	.box {
@@ -35,7 +54,7 @@
 	/* unfortunately masonry needs hard pxs for images */
 	.col1 { width: 80px; }
 	.col2 { width: 484px; }
-	.col3 { width: 240px; }
+	.col3 { width: 240px; padding:6px; }
 	.col1 img { max-width: 80px; }
 	.col2 img { max-width: 100%; }
 	.col3 img { max-width: 100%; }
