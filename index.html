@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
 <title>Felix's Portfolio</title>
 
@@ -104,15 +104,15 @@ jQuery(document).ready(function($){
 <div class="nav_wrap">
     <ul id="nav">
         <li id="top"><a href="#">Home</a></li>
-        <li id="top"><a href="#">關於我</a></li>
-        <li id="portfolio"><a href="#">作品集</a>
+        <li id="about"><a href="#">About</a></li>
+        <li id="portfolio"><a href="#">Portfolio</a>
         <!--					<ul>
                 <li><a href="#">第二層</a></li>
                 <li><a href="#">第二層</a></li>
                 <li><a href="#">第二層</a></li>
             </ul>-->
         </li>
-        <li id="contact"><a href="#">聯絡方式</a></li>
+        <li id="contact"><a href="#">Contact</a></li>
     </ul>
 </div>
 </div>
@@ -124,6 +124,10 @@ $(function(){
 	$('#top').click(function(){
 		$('html,body').animate({scrollTop:$('.wap').offset().top}, 800);
 	}); 
+
+	$('#about').click(function(){
+		$('html,body').animate({scrollTop:$('.about_wap').offset().top}, 800);
+	});
 	
 	$('#portfolio').click(function(){
 		$('html,body').animate({scrollTop:$('.portfolio_wap').offset().top}, 800);
@@ -140,25 +144,47 @@ $(function(){
 <div class="wap"><!--wap開始-->
 <div class="top_wap">
 
-<div class="skill">
+<div class="skill_wap">
+
+<div class="skill_1">
 <ul>
-<li>專長</li>
-<li>Photoshop</li>
-<li>Dreamwaver</li>
-<li>Illustrator</li>
-<li>IIS</li>
-<li>jquery</li>
-<li>javascript</li>
-<li>RWD響應式</li>
+<li><img src="img/icon_ps.png"></li>
+<li>Visual Design</li>
+<li></li>
 </ul>
 </div>
+
+<div class="skill_2">
+<ul>
+<li><img src="img/icon_dw.png"></li>
+<li>Web Design</li>
+<li></li>
+</ul>
+</div>
+
+<div class="skill_3">
+<ul>
+<li><img src="img/icon_ai.png"></li>
+<li>Graphic Design</li>
+</ul>
+</div>
+
+<div class="skill_4">
+<ul>
+<li><img src="img/icon_ui.png"></li>
+<li>UI Design</li>
+</ul>
+</div>
+
+</div>
+
 
 <div class="photo"></div>
 
 </div>
 
 <div class="about_wap">
-<div class="main_title">關於我<span>/ About Me</span></div>
+<div class="main_title">About<span>關於</span></div>
 <div class="about_content">
 <p>
 您好，感謝您花幾分鐘的時間觀看本人的履歷。從剛出社會的小夥子到現在可以獨當一面的設計者。最近看完了電影大賣空，才發現2008年金融海嘯原來曾經有那麼過，當時因為年紀輕，相對是無感的，唯一可以確定的是自己追求的還是設計，始終如一。
@@ -172,7 +198,7 @@ $(function(){
 
 
 <div class="portfolio_wap">
-<div class="main_title">作品集<span>/ Portfolio</span></div>
+<div class="main_title">Portfolio<span>作品</span></div>
 
 <!--瀑布流-->
 <div class="row">
@@ -259,7 +285,7 @@ $containter.imagesLoaded( function(){
 
 
 <div class="contact_wap">
-<div class="main_title">聯絡方式<span>/ Contact</span></div>
+<div class="main_title">Contact<span>聯絡</span></div>
 <div class="contact_content">
 <ul>
 <li><a href="mailto:qoo1980oop@gmail.com?subject=Felix's&body=您好">Email：qoo1980oop@gmail.com</a></li>
