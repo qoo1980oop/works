@@ -52,7 +52,15 @@ NAV
 *************************************************************************************/
 
 
-.nav_wrap_w{	position:fixed; width:100%; background-color:#FFF; z-index:9999; padding:18px; opacity:0.95; }
+.nav_wrap_w{
+	position:fixed;
+	width:100%;
+	background-color:#FFF;
+	z-index:9999;
+	padding:18px;
+	opacity:0.95;
+	font-family: 'Comfortaa', cursive;
+}
 .nav_wrap {
 	padding:0;
 	z-index:999;
