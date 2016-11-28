@@ -143,6 +143,19 @@ body {
 @media screen and (max-width: 520px) {
 	.col2 { max-width: 240px; }
     .skill_wap, .about_content { font-size:90%; }
+	.skill_1, .skill_2, .skill_3, .skill_4{
+	width:50%;
+	font-size:100%;
+	line-height: 110%;
+	text-align:center;
+	position: relative;
+	min-height:100px;
+	float:left;
+	left:1%;
+	display:table;
+	margin:4% 0 4% 0;
+}
+
 }
 
 
