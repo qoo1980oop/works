@@ -39,12 +39,14 @@ body {
 .skill_1 ul, .skill_2 ul, .skill_3 ul, .skill_4 ul{
 	vertical-align:middle;
 	display:table-cell;
-
+}
+.skill_1 li, .skill_2 li, .skill_3 li, .skill_4 li{
+	display:block;
 }
 
 
 
-.top_wap, .about_wap, .portfolio_wap, .contact_wap { max-width:100%;}
+.top_wap, .about_wap, .portfolio_wap, .contact_wap { max-width:100%; clear:both;}
 .about_wap , .portfolio_wap { padding-top:58px;}
 .contact_wap { padding-top:10px;}
 
