@@ -92,8 +92,8 @@ body {
 
 .about_content {
 	text-align:left;
-	padding:0 4% 0 4%;
-	line-height: 140%;
+	padding:2% 12% 0 12%;
+	line-height: 200%;
 }
 .contact_content ,.contact_content a {	color: #A2A2A2;}
 .contact_content {
@@ -150,6 +150,10 @@ body {
 /*如果使用者之視窗寬度介於 768px ~ 979px，將會再載入這裡的 CSS*/
 }
 
+@media screen and (max-width: 980px) {
+/*如果使用者之視窗寬度 <= 980px，將會再載入這裡的 CSS*/
+.lineqr{ display:none;}
+}
 @media screen and (max-width: 767px) {
 /*如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS*/
 }
