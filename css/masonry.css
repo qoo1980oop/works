@@ -75,7 +75,9 @@
 .col3 { width: 32%;}
 }
 @media screen and (max-width: 580px) {
-.col2 { width: 320px;}
 .col3 { width: 48%;}
 .col3 img { max-width: 100%; padding:8px;}
+.portfolio_content1 {
+	width:100%;
+}
 }
