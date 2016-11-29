@@ -75,11 +75,17 @@ jQuery(document).ready(function($){
         prevEffect  : 'none',
         nextEffect  : 'none',
         openEffect  : 'elastic',
-        closeEffect : 'elastic',
+
 		mouseWheel : false,
 		arrows: false,
 		scrolling : 'no',
 		padding : 6,
+
+helpers : {
+  overlay : {
+    css : { 'overflow' : 'hidden' }
+  }
+}
 
 /*        helpers : {
             thumbs  : {
