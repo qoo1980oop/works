@@ -111,7 +111,7 @@ body {
 .portfolio_content2 {
 	display:block;
 	position:relative;
-	width:80%;
+	width:85%;
 	margin:0 auto;
 }
 
@@ -154,10 +154,10 @@ body {
 /*如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS*/
 }
 
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 580px) {
 
-    .skill_wap, .about_content { font-size:90%; }
-	.skill_1, .skill_2, .skill_3, .skill_4{
+.skill_wap, .about_content { font-size:90%; }
+.skill_1, .skill_2, .skill_3, .skill_4{
 	width:48%;
 	font-size:100%;
 	line-height: 110%;
@@ -167,9 +167,14 @@ body {
 	float:left;
 	left:1%;
 	display:table;
+}
+.portfolio_content2 {
+	display:block;
+	position:relative;
+	width:100%;
+	margin:0 auto;
 
 }
-
 }
 
 
