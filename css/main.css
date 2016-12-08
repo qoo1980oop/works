@@ -108,7 +108,6 @@ body {
 .about_content{ 
 	text-align:left;
 	line-height: 200%;
-
 	margin: 6% 10% 6% 10%;
 	padding:10%;
 	background-color:rgba(0,0,0,0.3);
@@ -182,7 +181,7 @@ body {
 	text-align: left;
 	margin-bottom:2%;
 	margin:0 auto;	
-}
+} 
 .contact_content li{ width:48%; display:inline-block; margin:0% 1% 10% 1%;float:left; }
 .lineqr{ width:100%; text-align:center; clear:both; padding:4% 0 4% 0;}
 .lineqr img{ width:15%;}
@@ -199,14 +198,21 @@ body {
 
 @media screen and (max-width: 980px) {
 /*如果使用者之視窗寬度 <= 980px，將會再載入這裡的 CSS*/
-.lineqr{ display:none;}
+
 }
 @media screen and (max-width: 767px) {
 /*如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS*/
 }
 
 @media screen and (max-width: 580px) {
-
+.contact_content ul {
+	width:90%;
+	display:block;
+	text-align: left;
+	margin-bottom:2%;
+	margin:0 auto;	
+} 
+.contact_content li{ width:100%; display:inline-block; margin:0% 1% 10% 1%;float:left; }
 .skill_wap, .about_content { font-size:90%; }
 .skill_1, .skill_2, .skill_3, .skill_4{
 	width:48%;
