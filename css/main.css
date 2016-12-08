@@ -188,7 +188,7 @@ body {
 
 .portfolio_tt{ font-size:90%; text-align:center; margin:4% auto 2% auto; color:#e5e5e5;}
 
-#particles-js{ position:absolute; width:100%; height:800px;}
+#particles-js{ position:absolute; min-width:1920px; }
 @media screen and (min-width: 1200px) {
 /*如果使用者之視窗寬度 >= 1200px，將會再載入這裡的 CSS*/
 }
