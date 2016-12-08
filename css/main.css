@@ -15,6 +15,10 @@ body {
 	background-color:#0d0d0d;
 	font-family: "微軟正黑體", Arial;
 	color:#e5e5e5;
+	background-attachment: fixed;
+	background-image: url(../img/bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
 
 }
 .wap{
@@ -53,7 +57,14 @@ body {
 
 .top_wap, .about_wap, .portfolio_wap, .portfolio_wap2, .contact_wap { max-width:100%; clear:both;}
 .about_wap , .portfolio_wap { padding-top:58px;}
-.contact_wap { padding-top:10px;}
+.contact_wap {
+	padding-top:10px;
+	background-color:
+	rgba(255, 255, 255,1);
+	display:table;
+	width:100%;
+	color:#000!important;
+}
 
 .skill_title {
 	width: 100%;
@@ -64,10 +75,18 @@ body {
 	position:absolute;
 	margin-top:6%;
 }
+.main_title_noline{
+	border-bottom-width: 1px;
+	border-bottom-style: none!important;
+	border-bottom-color: #333;
+	border-top-width: 1px;
+	border-top-style: none!important;
+	border-top-color: #333;
+}
 .main_title:first-child{  margin-top: 0%;}
 .main_title {
 	width: 100%;
-	font-size:120%;
+	font-size:200%;
 	text-align:center;
 	font-family: 'cwTeXHei', sans-serif;
 	border-bottom-width: 1px;
@@ -88,18 +107,51 @@ body {
 .about_content, .contact_content, .portfolio_content {
 	font-size:100%;
 }
-
-.about_content {
+.about_content{ 
 	text-align:left;
-	padding:2% 12% 0 12%;
 	line-height: 200%;
+
+	margin: 6% 10% 6% 10%;
+	padding:10%;
+	background-color:rgba(0,0,0,0.3);
 }
-.contact_content ,.contact_content a {	color: #A2A2A2;}
+.contact_content ,.contact_content a {
+	color: #333;
+}
 .contact_content {
 	text-align:left;
 	padding:0 4% 0 4%;
 	font-size:100%;
 	line-height: 200%;
+}
+
+.arrow_box {
+	position: relative;
+	background: #88b7d5;
+	border: 4px solid #c2e1f5;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(136, 183, 213, 0);
+	border-bottom-color: #88b7d5;
+	border-width: 30px;
+	margin-left: -30px;
+}
+.arrow_box:before {
+	border-color: rgba(194, 225, 245, 0);
+	border-bottom-color: #c2e1f5;
+	border-width: 36px;
+	margin-left: -36px;
 }
 .portfolio_wap {}
 .portfolio_content1 {
@@ -127,13 +179,14 @@ body {
 
 
 .contact_content ul {
-	width:100%;
+	width:90%;
 	display:block;
-	text-align: center;
+	text-align: left;
 	margin-bottom:2%;
+	margin:0 auto;	
 }
-.contact_content li{ display:inline-block; margin:0% 1% 0% 1%; }
-.lineqr{ width:100%; text-align:center;}
+.contact_content li{ width:48%; display:inline-block; margin:0% 1% 10% 1%;float:left; }
+.lineqr{ width:100%; text-align:center; clear:both; padding:4% 0 4% 0;}
 .lineqr img{ width:15%;}
 
 .portfolio_tt{ font-size:90%; text-align:center; margin:4% auto 2% auto; color:#e5e5e5;}
@@ -176,6 +229,3 @@ body {
 
 }
 }
-
-
-
