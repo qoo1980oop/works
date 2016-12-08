@@ -14,12 +14,8 @@ body {
 	font-size:1em;
 	font-family: "微軟正黑體", Arial;
 	color:#e5e5e5;
-  background: url(../img/bg.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  max-width:1920px;
+	background: url(../img/bg.jpg) no-repeat top center fixed;
+	max-width:1920px;
 
 }
 .wap{
