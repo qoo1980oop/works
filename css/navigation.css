@@ -57,9 +57,14 @@ NAV
 	width:100%;
 	background-color:#FFF;
 	z-index:9999;
-	padding:18px;
+	padding:10px;
 	opacity:0.95;
 	font-family: 'Comfortaa', cursive;
+	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+	-ms-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+	-o-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 }
 .nav_wrap {
 	padding:0;
@@ -112,19 +117,19 @@ NAV
 #nav li:hover > ul {
 	display: block; /* show dropdown on hover */
 }
-
+#nav li a img { }
+.useicon { width:40px;}
+.useicon a img { width:26px; vertical-align: middle; margin-bottom:6px;}
 .logo {
-	width:50px;
-	height: 50px;
+	width:140px;
 	z-index:999;
-	background-image: url(../img/fb_chat.png);
-	background-repeat: no-repeat;
-	background-position: center top;
-	background-size:50px;
 	position:absolute;
 	z-index:99999;
-	left:0%;
-	top:8%;
+	left:1%;
+	padding:0 0 0 0;
+}
+.logo img {
+	width:100%;
 }
 
 
@@ -195,7 +200,10 @@ MOBILE
 	#nav ul li {
 		margin: 3px 0 3px 15px;
 	}
-
+	.useicon { display: none!important;}
+	.logo {
+		top:15%;
+	}
 }
 
 @media screen and (min-width: 768px) {

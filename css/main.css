@@ -1,14 +1,11 @@
 @charset 'utf-8';
-@import url(http://fonts.googleapis.com/earlyaccess/cwtexhei.css);
  
 /*dropbox_use*/
 @font-face {
 	font-family: 'cwTeXHei';
 	font-size: 100%;
 	font-style: normal;
-	font-weight:500;
-	src: url('https://dl.dropboxusercontent.com/u/34021949/web/web_ok/font/cwTeXHei.ttf');
-	
+	font-weight:500;	
 }
 body {
 	font-size:1em;
@@ -16,13 +13,25 @@ body {
 	color:#e5e5e5;
 	background: url(../img/bg.jpg) no-repeat top center fixed;
 	background-color:#343438;
-	max-width:1920px;
-
+	max-width:100%;
+	overflow-x: hidden;
 }
 .wap{
 	display: block;
 	padding:56px 0% 0 0%;
 }
+.slogan_wap {
+	width: 90%;
+	margin:0 auto;
+	margin-top:100px;
+}
+.slogan{
+	font-size:360%;
+	text-align:center;
+	line-height: 180%;
+	font-family: 'Roboto', sans-serif;
+}
+.slogan_s { font-size:100%; text-align:center;}
 .top_wap{ clear:both;  width:100%; height:100%; background: url(../img/top.jpg) no-repeat top center; }
 .top_wap img{ opacity:0.8;}
 .skill_wap{ width:90%; margin:0 auto;}
@@ -40,7 +49,7 @@ body {
 	float:left;
 	left:1%;
 	display:table;
-	margin:10% 0 2% 0;
+	margin:6% 0 2% 0;
 }
 .skill_1 ul, .skill_2 ul, .skill_3 ul, .skill_4 ul{
 	display:table-cell;
@@ -54,10 +63,11 @@ body {
 }
 
 .top_wap, .about_wap, .portfolio_wap, .portfolio_wap2, .contact_wap { max-width:100%; clear:both;}
-.about_wap , .portfolio_wap { padding-top:58px;}
+.about_wap { padding-top:58px;}
+.portfolio_wap { padding-top:58px;}
+.contact_wap { padding-top:58px;}
 .contact_wap {
-	padding-top:10px;
-	background-color:
+	background-color: #FFF;
 	rgba(255, 255, 255,1);
 	display:table;
 	width:100%;
@@ -73,28 +83,39 @@ body {
 	position:absolute;
 	margin-top:6%;
 }
-.main_title_noline{
+
+/*.main_title_noline{
 	border-bottom-width: 1px;
 	border-bottom-style: none!important;
-	border-bottom-color: #444;
-	border-top-width: 1px;
+	border-bottom-color: #808080;
+	border-top-width: 0px;
 	border-top-style: none!important;
 	border-top-color: #444;
-}
+}*/
 .main_title:first-child{  margin-top: 0%;}
+.main_title:after{
+	background:#EA504E;
+	content:"";
+	display:block;
+	height:3px;
+	margin:0 auto;
+	position:relative;
+	width:50px;
+}
 .main_title {
 	width: 100%;
-	font-size:200%;
+	font-size:300%;
 	text-align:center;
 	font-family: 'cwTeXHei', sans-serif;
-	border-bottom-width: 1px;
+	font-family: 'Roboto', sans-serif;
+/*	border-bottom-width: 1px;
 	border-bottom-style: solid;
 	border-bottom-color: #333;
 	border-top-width: 1px;
 	border-top-style: solid;
-	border-top-color: #333;
-	line-height: 300%;
-	margin:0 auto 2% auto;
+	border-top-color: #333;*/
+	line-height: 200%;
+	margin:0 auto 4% auto;
 }
 .main_title span {
 	font-family: "微軟正黑體", Arial;
@@ -108,20 +129,35 @@ body {
 .about_content{ 
 	text-align:left;
 	line-height: 200%;
-	margin: 6% 10% 6% 10%;
-	padding:10%;
+	margin: 3% 10% 3% 10%;
+	padding:6% 10% 6% 10%;
 	background-color:rgba(0,0,0,0.3);
 }
 .contact_content ,.contact_content a {
 	color: #333;
 }
+.contact_content a { font-size:80%;}
 .contact_content {
 	text-align:left;
-	padding:0 4% 0 4%;
+	padding:0 2% 0 2%;
 	font-size:100%;
 	line-height: 200%;
 }
-
+.contact_content_name {
+	font-size:160%;
+	font-weight: normal;
+	color: #222;
+	padding-right: 3%;
+}
+.contact_content_name img {
+	vertical-align:middle;
+	width:40px;
+	height:40px;
+	margin-bottom:6px;
+}
+.contact_content_job {
+	text-decoration: underline;
+}
 .arrow_box {
 	position: relative;
 	background: #88b7d5;
@@ -163,7 +199,13 @@ body {
 	width:85%;
 	margin:0 auto;
 }
-
+.portfolio_content2 a img:hover{
+	box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2);
+	-ms-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2);
+	-o-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2);
+	-moz-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2);
+	-webkit-box-shadow: 2px 5px 10px 0px rgba(0,0,0,0.2);
+}
 
 .portfolio{	width:100%; }
 .portfolio_topic{ font-size:120%; display:block; text-align:center;}
@@ -182,7 +224,9 @@ body {
 	margin-bottom:2%;
 	margin:0 auto;	
 } 
-.contact_content li{ width:48%; display:inline-block; margin:0% 1% 10% 1%;float:left; }
+.contact_content li{ width:43%; display:inline-block; margin:0% 1% 9% 3%;float:left; }
+
+.joinus { font-size:160%; width:100%; text-align:center; clear:both; padding:0 0 4% 0;}
 .lineqr{ width:100%; text-align:center; clear:both; padding:4% 0 4% 0;}
 .lineqr img{ width:15%;}
 
@@ -203,9 +247,9 @@ body {
 }
 @media screen and (max-width: 767px) {
 /*如果使用者之視窗寬度 <= 768px，將會再載入這裡的 CSS*/
+.slogan_wap {
+	margin-top:20px;
 }
-
-@media screen and (max-width: 580px) {
 .contact_content ul {
 	width:90%;
 	display:block;
@@ -214,6 +258,9 @@ body {
 	margin:0 auto;	
 } 
 .contact_content li{ width:100%; display:inline-block; margin:0% 1% 10% 1%;float:left; }
+}
+
+@media screen and (max-width: 580px) {
 .skill_wap, .about_content { font-size:90%; }
 .skill_1, .skill_2, .skill_3, .skill_4{
 	width:48%;

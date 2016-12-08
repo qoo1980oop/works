@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3, user-scalable=no">
 <title></title>
 
 <link href="css/main.css" rel="stylesheet" type="text/css">
@@ -13,6 +13,7 @@
 
 <script type="text/javascript" src="js/jquery-1.10.1.min.js"></script><!-- JS主程式 -->
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
 
 <!-- 加入主畫面 -->
 <!--<link rel="SHORTCUT ICON" href="favicon.ico" type="image/x-icon">-->
@@ -105,12 +106,12 @@ helpers : {
 
 <body>
 <div class="nav_wrap_w">
-<div class="logo"></div>
+<div class="logo"><span id="logoimg"><a href="#"><img src="img/logo.png" ></a></span></div>
 <div class="menu_icon"></div>
 <!--類似sidr-->
 <div class="nav_wrap">
     <ul id="nav">
-        <li id="top"><a href="#">HOME</a></li>
+        <li id="top" class="useicon"><a href="#"><img src="img/svg_home.svg"></a></li>
         <li id="about"><a href="#">WHO ARE WE</a></li>
         <li id="portfolio"><a href="#">PORTFOLIO</a>
         <!--					<ul>
@@ -124,10 +125,11 @@ helpers : {
 </div>
 </div>
 
+
 <!--滑動選單-->
 <script language="javascript">
 $(function(){
-	$('#top').click(function(){
+	$('#top,#logoimg').click(function(){
 		$('html,body').animate({scrollTop:$('.wap').offset().top}, 800);
 	}); 
 
@@ -146,11 +148,22 @@ $(function(){
 </script>
 
 
+<!-- particles.js container -->
+<div id="particles-js"></div>
+
+<!-- scripts -->
+<script src="js/particles.js"></script>
+<script src="js/app.js"></script>
 
 
 
 
 <div class="wap"><!--wap開始-->
+
+<div class="slogan_wap">
+<div class="slogan">Design Art</div>
+<div class="slogan_s">我們創造無限可能</div>
+</div>
 
 <div class="top_wap">
 <div class="skill_wap">
@@ -205,7 +218,7 @@ $(function(){
 <div class="about_content">
 <div class="main_title main_title_noline">Who Are We</div>
 <p>我們是一群對設計充滿熱情，相信生活體驗即是靈感而靈感融入設計，創造任何的可能性;我們喜歡聆聽客戶對於品牌的最初理念，觀察並理解客戶的audience，經由豐富的設計經驗蘊化出設計概念，將無形的品牌價值轉化為有形的視覺體驗，動人的故事被真實的說出來，透過設計連結品牌與人之間的感知力。</p>
-<p>過去幾年來，不論是在平面出版物、包裝、品牌設計或網站規劃建置各類設計案中，傾聽 → 分析 → 概念形成 → 注入靈魂的設計，專業態度完成客戶的每一個案子<br>
+<p>過去幾年來，不論是在平面出版物、包裝、品牌設計或網站規劃建置各類設計案中，傾聽 → 分析 → 概念形成 → 注入靈魂的設計，專業態度完成客戶的每一個案子。<br>
 <br>
 </div>
 </div>
@@ -222,33 +235,88 @@ $(function(){
 <!--<img src="images/untitled.jpg" >-->
 <a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="http://www.wasabii.com.tw/mobile/index.aspx" target="_blank">
 <span class="roll"></span>
-<img src="portfolio/wa_001s.png" alt=""><br>
-<div class="portfolio_tt">《Wasabii》手機平台(RWD)</div>
+<img src="portfolio/wa_001s.jpg" alt=""><br>
+<div class="portfolio_tt">Wasabii-手機平台(RWD)</div>
 </a>
 
 <a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/COG_001/index.html" target="_blank">
 <span class="roll"></span>
-<img src="portfolio/COG_001s.png" alt=""><br>
-<div class="portfolio_tt">《神之子》事前登入(RWD)</div>
+<img src="portfolio/COG_001s.jpg" alt=""><br>
+<div class="portfolio_tt">神之子-事前登入(RWD)</div>
 </a>
 
 <a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/GCJP_001/index.html" target="_blank">
 <span class="roll"></span>
 <img src="portfolio/GCJP_001s.jpg" alt=""><br>
-<div class="portfolio_tt">《攻城掠地》事前登入</div>
+<div class="portfolio_tt">攻城掠地-事前登入</div>
 </a>
 
 <a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/BB_001/index.html" target="_blank">
 <span class="roll"></span>
 <img src="portfolio/BB_001s.jpg" alt=""><br>
-<div class="portfolio_tt">《全民打棒球》改版</div>
+<div class="portfolio_tt">全民打棒球-改版</div>
 </a>
 
 <a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/ELOA_001/index.html" target="_blank">
 <span class="roll"></span>
 <img src="portfolio/ELOA_001s.jpg" alt=""><br>
-<div class="portfolio_tt">《ELOA 艾洛亞》形象官網</div>
+<div class="portfolio_tt">ELOA 艾洛亞-形象官網</div>
 </a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/160809_web/index.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/kou_01s.jpg" alt=""><br>
+<div class="portfolio_tt">樂投-誰是下一個</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="portfolio/160908_web/index.html" target="_blank">
+<span class="roll"></span>
+<img src="portfolio/kou_02s.jpg" alt=""><br>
+<div class="portfolio_tt">易博</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_09.png" alt=""><br>
+<div class="portfolio_tt">天上天下血戰</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_10.png" alt=""><br>
+<div class="portfolio_tt">奧茲歷險記</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_11.png" alt=""><br>
+<div class="portfolio_tt">爐石傳說</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_12.png" alt=""><br>
+<div class="portfolio_tt">大航海-丁丁歷險記</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_13.png" alt=""><br>
+<div class="portfolio_tt">FreeStyle-3D舞力對決2</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_14.png" alt=""><br>
+<div class="portfolio_tt">AfreecaTV</div>
+</a>
+
+<a class="box col2 fancybox-thumb" rel="fancybox-thumb" href="javascript: void(0)" >
+<span class="roll"></span>
+<img src="portfolio/kou_15.png" alt=""><br>
+<div class="portfolio_tt">AfreecaTV</div>
+</a>
+
 
 
 </div><!--/container -->
@@ -261,21 +329,74 @@ $(function(){
 <a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/COG_002.jpg">
 <span class="roll" ></span>
 <img src="portfolio/COG_002s.jpg" alt=""><br>
-<div class="portfolio_tt">《神之子》</div>
+<div class="portfolio_tt">神之子</div>
 </a>
 
 <a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/SDS_001.jpg">
 <span class="roll" ></span>
 <img src="portfolio/SDS_001s.jpg" alt=""><br>
-<div class="portfolio_tt">《SD鋼彈Shooter》</div>
+<div class="portfolio_tt">SD鋼彈Shooter</div>
 </a>
 
 <a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/FS_001.jpg">
 <span class="roll" ></span>
 <img src="portfolio/FS_001s.jpg" alt=""><br>
-<div class="portfolio_tt">《FreeStyle》</div>
+<div class="portfolio_tt">FreeStyle</div>
 </a>
 
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/kou_03.jpg">
+<span class="roll" ></span>
+<img src="portfolio/kou_03s.jpg" alt=""><br>
+<div class="portfolio_tt">申辦光纖上網好10機</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/kou_04.jpg">
+<span class="roll" ></span>
+<img src="portfolio/kou_04s.jpg" alt=""><br>
+<div class="portfolio_tt">光纖+MOD</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/kou_05.jpg">
+<span class="roll" ></span>
+<img src="portfolio/kou_05s.jpg" alt=""><br>
+<div class="portfolio_tt">光纖好禮祭</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/kou_06.jpg">
+<span class="roll" ></span>
+<img src="portfolio/kou_06s.jpg" alt=""><br>
+<div class="portfolio_tt">光纖上網</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/kou_07.jpg">
+<span class="roll" ></span>
+<img src="portfolio/kou_07s.jpg" alt=""><br>
+<div class="portfolio_tt">數位家庭生活</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/kou_08.jpg">
+<span class="roll" ></span>
+<img src="portfolio/kou_08s.jpg" alt=""><br>
+<div class="portfolio_tt">開學祭</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/jason_01.jpg">
+<span class="roll" ></span>
+<img src="portfolio/jason_01s.jpg" alt=""><br>
+<div class="portfolio_tt">集點APP UI</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/jason_02.jpg">
+<span class="roll" ></span>
+<img src="portfolio/jason_02s.jpg" alt=""><br>
+<div class="portfolio_tt">集點APP UI</div>
+</a>
+
+<a class="box col3 fancybox-thumb" rel="fancybox-thumb" href="portfolio/jason_03.jpg">
+<span class="roll" ></span>
+<img src="portfolio/jason_03s.jpg" alt=""><br>
+<div class="portfolio_tt">集點APP UI</div>
+</a>
 
 </div>
 </div>
@@ -300,26 +421,34 @@ $containter.imagesLoaded( function(){
 <div class="main_title main_title_noline">Contact</div>
 <div class="contact_content">
 <ul>
-<li>Director & Market<br>
-Jason<br>
+<li>
+<span class="contact_content_name"><img src="img/svg_myhead.svg">Jason</span>
+<span class="contact_content_job">Director & Market</span><br>
 <a href="mailto:hahajason778@gmail.com">hahajason778@gmail.com</a><br>
+skype:
 </li>
 
-<li>Web & Graphic Design<br>
-Felix<br>
+<li>
+<span class="contact_content_name"><img src="img/svg_myhead.svg">Felix</span>
+<span class="contact_content_job">Web & Graphic Design</span><br>
 <a href="mailto:qoo1980oop@gmail.com">qoo1980oop@gmail.com</a><br>
+skype:
 </li>
 
-<li>Photography & UI<br>
-Kou8<br>
+<li>
+<span class="contact_content_name"><img src="img/svg_myhead.svg">Kou8</span>
+<span class="contact_content_job">Photography & UI</span><br>
 <a href="mailto:kuobahome@gmail.com">kuobahome@gmail.com</a><br>
+skype:
 </li>
 
 </ul>
+
+<div class="joinus">or Join Us</div>
 </div>
 </div>
 
-<div class="lineqr">©2016 All Rights Reserved</div>
+<div class="lineqr">2016 Design Art © All Rights Reserved</div>
 
 </div><!--wap結束-->
 	
