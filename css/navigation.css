@@ -59,12 +59,12 @@ NAV
 	z-index:9999;
 	padding:10px;
 	opacity:0.95;
-	font-family: 'Comfortaa', cursive;
 	box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 	-ms-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 	-o-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 	-moz-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
 	-webkit-box-shadow: 0px 5px 10px 0px rgba(0,0,0,0.1);
+	font-weight: 200;
 }
 .nav_wrap {
 	padding:0;
