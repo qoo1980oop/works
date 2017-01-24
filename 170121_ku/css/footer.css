@@ -79,8 +79,15 @@
 	width:120px;
 	font-size:15px;
 }
-.sitemap > li a {
-	color:#161616;
+.sitemap_topic a {
+	color:#acacac!important;
+}
+.sitemap a {
+	color:#666;
+	font-size:15px;
+}
+.sitemap a:hover {
+	color:#d8ba42;
 }
 
 .cr{
@@ -90,18 +97,22 @@
 	padding:42px 0 42px 0;
 	border-top: 1px solid #808080;
 	background:url(../images/footer_bg.jpg) repeat center top;
+	color:#ccc;
+	font-size:15px;
+	line-height:16px;
 }
+.cr a {	color:#ccc;}
 .cr li{ display:inline-block;}
 .cr small {
-	color:#fff;
-	line-height:18px;
+	color:#ccc;
 	letter-spacing:0.08em;
-	font-size:16px;
 	display:block;
-	margin-top:24px;
+	margin-top:20px;
+	font-size:15px;
+	line-height:16px;
 }
 .cr small span {
-	font-weight:bold;
+
 }
 
 .clear {
