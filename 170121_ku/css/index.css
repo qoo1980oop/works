@@ -257,7 +257,7 @@
 	position: relative;
 }
 #index_wrapper .timeline {
-	width:1200px;
+	width:1060px;
 	margin:0 auto 0 auto;
 	position:relative;
 	letter-spacing:0.08em;
@@ -420,7 +420,7 @@
 	margin:35px 0 35px 0;
 }
 #index_wrapper .timeline li.event .point p {
-	font-size:15px;
+	font-size:100%;
 	color:#ccc;
 	line-height:26px;
 	text-align:left;
